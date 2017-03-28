@@ -15,6 +15,7 @@ When you save the notebook, an HTML file containing the code and output will be 
 library(ggplot2)
 library(tidyr)
 library(dplyr)
+library(datasets)
 suppressPackageStartupMessages(library(dplyr))
 ```
 

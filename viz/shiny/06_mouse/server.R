@@ -1,8 +1,10 @@
 library(shiny)
 library(ggplot2)
+library(datasets)
 
 server <- function(input, output) {
   output$plot <- renderPlot({
+    df <- iris 
     ggplot(df, aes(x=Sepal.Width, y=Sepal.Length, color=Species)) +
       geom_point()
   })
